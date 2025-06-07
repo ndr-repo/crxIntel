@@ -21,5 +21,4 @@ git clone https://github.com/ndr-repo/crxIntel.git
 powershell -noexit -ExecutionPolicy Bypass -File crxIntel.ps1 <chrome-extension-id>
 ```
 ### Screenshots
-
-![image](https://github.com/user-attachments/assets/c75a2746-403e-4346-809c-2830067e7418)
+![image](https://github.com/user-attachments/assets/f9c95934-e9a2-4730-bba6-60d73dc156bd)
