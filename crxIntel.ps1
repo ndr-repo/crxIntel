@@ -8,7 +8,7 @@ Set-Location $crxId
 (Invoke-WebRequest -Uri $crxUri -UserAgent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" -OutFile $crxFileName -Method Get -ErrorAction Ignore).Content
 Invoke-Expression "$7zCli l $crxFileName"
 Invoke-Expression "$7zCli e $crxFileName -bd"
-Write-Host -ForegroundColor Red "`n" 
+Write-Host -ForegroundColor Red "`nExtracting URLs from"$crxId"`n" 
 Get-ChildItem -Recurse | Where-Object -Property Extension -EQ ".js" | Get-Content -Encoding utf8 | Out-String -Stream | grep -oP 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)' | Sort-Object -Unique | Out-String -Stream
 Get-ChildItem -Recurse | Where-Object -Property Extension -EQ ".json" | Get-Content -Encoding utf8 | Out-String -Stream | grep -oP 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)' | Sort-Object -Unique | Out-String -Stream
 Get-ChildItem -Recurse | Where-Object -Property Extension -EQ ".svg" | Get-Content -Encoding utf8 | Out-String -Stream | grep -oP 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)' | Sort-Object -Unique | Out-String -Stream
