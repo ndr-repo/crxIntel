@@ -1,6 +1,11 @@
 # crxIntel
 Reverse Engineering for Chrome Browser Extensions
 
+Currently, crxIntel will:
+  - Download .crx extension files
+  - Extract all files from .crx files
+  - Parse URLs from extracted files
+    
 ### Setup
 ```
 git clone https://github.com/ndr-repo/crxIntel.git
