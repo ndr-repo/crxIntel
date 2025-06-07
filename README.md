@@ -5,6 +5,7 @@ Currently, crxIntel will:
   - Download .crx extension files
   - Extract all files from .crx files
   - Parse URLs from extracted files
+  - Write URLs to log file
 
 ### Setup
 ```
