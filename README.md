@@ -5,7 +5,7 @@ Currently, crxIntel will:
   - Download .crx extension files
   - Extract all files from .crx files
   - Parse URLs from extracted files
-    
+
 ### Setup
 ```
 git clone https://github.com/ndr-repo/crxIntel.git
@@ -20,3 +20,6 @@ git clone https://github.com/ndr-repo/crxIntel.git
 ```
 powershell -noexit -ExecutionPolicy Bypass -File crxIntel.ps1 <chrome-extension-id>
 ```
+### Screenshots
+
+![image](https://github.com/user-attachments/assets/c75a2746-403e-4346-809c-2830067e7418)
