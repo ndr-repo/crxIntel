@@ -1,6 +1,4 @@
-# crxIntel
-Reverse Engineering for Chrome Browser Extensions
-
+# crxIntel - Reverse Engineering for Chrome Browser Extensions
 ![image](https://github.com/user-attachments/assets/90b43fb5-6b22-4211-b1f8-652f7f30ce66)
 
 Currently, crxIntel will:
