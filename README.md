@@ -1,6 +1,8 @@
 # crxIntel
 Reverse Engineering for Chrome Browser Extensions
 
+![image](https://github.com/user-attachments/assets/90b43fb5-6b22-4211-b1f8-652f7f30ce66)
+
 Currently, crxIntel will:
   - Download .crx extension files
   - Extract all files from .crx files
@@ -10,6 +12,8 @@ Currently, crxIntel will:
 ### Setup
 ```
 git clone https://github.com/ndr-repo/crxIntel.git
+cd crxIntel
+powershell -noexit -ExecutionPolicy Bypass -File Setup.ps1 
 ```
 
 ### Dependancies
@@ -21,6 +25,9 @@ git clone https://github.com/ndr-repo/crxIntel.git
 ```
 powershell -noexit -ExecutionPolicy Bypass -File crxIntel.ps1 <chrome-extension-id>
 ```
-### Screenshots
-![image](https://github.com/user-attachments/assets/90b43fb5-6b22-4211-b1f8-652f7f30ce66)
+### Screenshots - Usage
 ![image](https://github.com/user-attachments/assets/f9c95934-e9a2-4730-bba6-60d73dc156bd)
+
+### Screenshots - Setup
+![crxIntelSetup](https://github.com/user-attachments/assets/507cf51f-2770-47ea-8b78-a3468b21f8fb)
+
