@@ -2,7 +2,7 @@ $crxId = $args[0]
 $crxUri = 'https://clients2.google.com/service/update2/crx?response=redirect&prodversion=137&x=id%3D'+$crxId+'%26installsource%3Dondemand%26uc&acceptformat=crx2,crx3' 
 $crxFileName = $crxId+'.crx'
 $7zCli = "& 'C:\Program Files\7-Zip\7z.exe'"
-Get-Content "amcLogo.txt"
+Get-Content "amcLogo.txt" | Write-Host -ForegroundColor Red
 Write-Host -ForegroundColor Red "`ncrxIntel: Reverse Engineering for Browser Extensions - Google Chrome`n`nTarget Extension ID:"$crxId"`n`nCreated by Gabriel H. @weekndr_sec`nhttps://github.com/ndr-repo | http://weekndr.me`n"
 New-Item -ItemType Directory $crxId -Force
 Set-Location $crxId 
